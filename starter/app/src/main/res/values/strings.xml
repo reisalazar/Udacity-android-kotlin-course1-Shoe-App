@@ -3,8 +3,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="login_with_new_account">Login with New Account</string>
+    <string name="login_with_new_account">Login with a New Account</string>
     <string name="login">Login</string>
     <string name="enter_your_password">Enter your Password</string>
     <string name="enter_your_email">Enter your Email</string>
+    <string name="slogan">These Shoes Are Made for Walkin\'</string>
+    <string name="welcome">Welcome</string>
+    <string name="walk_to_the_app">Walk to the app</string>
+    <string name="shoe_store">Shoe Store</string>
 </resources>
