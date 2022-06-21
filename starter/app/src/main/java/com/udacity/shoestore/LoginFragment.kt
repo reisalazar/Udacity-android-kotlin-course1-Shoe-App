@@ -20,10 +20,10 @@ class LoginFragment : Fragment() {
         R.layout.fragment_login, container, false)
 
         binding.btLogin.setOnClickListener(Navigation.
-        createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragmentclass3))
+        createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragmentclass))
 
         binding.btNewAccLogin.setOnClickListener(Navigation.
-        createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragmentclass3))
+        createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragmentclass))
 
         return binding.root
     }

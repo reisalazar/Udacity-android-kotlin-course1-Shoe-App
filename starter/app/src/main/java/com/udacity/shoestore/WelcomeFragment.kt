@@ -19,7 +19,7 @@ class WelcomeFragment  : Fragment() {
             R.layout.fragment_welcome, container,false)
 
         binding.btNavToInstructions.setOnClickListener(Navigation.
-        createNavigateOnClickListener(R.id.action_welcomeFragmentclass3_to_instructionsFragment))
+        createNavigateOnClickListener(R.id.action_welcomeFragmentclass_to_instructionsFragment))
 
         return binding.root
     }

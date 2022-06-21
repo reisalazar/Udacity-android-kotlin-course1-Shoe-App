@@ -16,12 +16,10 @@ class InstructionsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentInstructionsBinding>(
-            inflater,
-            R.layout.fragment_instructions, container, false
+            inflater, R.layout.fragment_instructions, container, false
         )
 
-        binding.btNavToShoelist.setOnClickListener(
-            Navigation.
+        binding.btNavToShoelist.setOnClickListener(Navigation.
         createNavigateOnClickListener(R.id.action_instructionsFragment_to_shoeList))
 
         return binding.root
