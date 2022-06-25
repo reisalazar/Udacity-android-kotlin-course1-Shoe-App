@@ -50,7 +50,21 @@
         android:id="@+id/shoeDetailFragment"
         android:name="com.udacity.shoestore.ShoeDetailFragment"
         android:label="fragment_shoe_detail"
-        tools:layout="@layout/fragment_shoe_detail"
-        app:popUpTo="@id/loginFragment"
-        app:popUpToInclusive="true"/>
+        tools:layout="@layout/fragment_shoe_detail">
+        <action
+            android:id="@+id/action_shoeDetailFragment_to_shoeList"
+            app:destination="@id/shoeList" />
+        <argument
+            android:name="shoe_name"
+            app:argType="string" />
+        <argument
+            android:name="company"
+            app:argType="string" />
+        <argument
+            android:name="shoe_size"
+            app:argType="integer" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </fragment>
 </navigation>

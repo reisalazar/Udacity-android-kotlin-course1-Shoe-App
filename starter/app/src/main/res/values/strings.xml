@@ -12,4 +12,10 @@
     <string name="walk_to_the_app">Walk to the app</string>
     <string name="shoe_store">Shoe Store</string>
     <string name="logout_menu">Logout</string>
+    <string name="description">Description:</string>
+    <string name="size">Size:</string>
+    <string name="company">Company:</string>
+    <string name="shoe_name">Shoe Name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">save</string>
 </resources>
