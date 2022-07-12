@@ -2,7 +2,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/loginFragment"
+        android:id="@+id/logout"
         android:icon="@drawable/ic_logout"
         android:title="@string/logout_menu"
         app:showAsAction="ifRoom" />

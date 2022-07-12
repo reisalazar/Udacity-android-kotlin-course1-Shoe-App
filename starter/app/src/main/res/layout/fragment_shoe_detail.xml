@@ -3,10 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="ShoeListViewModel"
+            type="com.udacity.shoestore.viewmodel.ShoeViewModel" />
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ShoeDetailFragment">
+        android:layout_margin="@dimen/layout_margin"
+        tools:context=".screens.ShoeDetailFragment">
 
         <!--Shoe name-->
         <TextView
@@ -26,9 +36,11 @@
             android:ems="5"
             android:inputType="text"
             android:minHeight="48dp"
+            android:text="@={shoe.name}"
             app:layout_constraintBottom_toTopOf="@+id/et_shoe_company"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_company"
-            app:layout_constraintStart_toStartOf="@+id/et_shoe_company" />
+            app:layout_constraintStart_toStartOf="@+id/et_shoe_company"
+            android:autofillHints="" />
 
         <!--Company-->
         <TextView
@@ -49,10 +61,13 @@
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingBottom="@dimen/big_padding"
+            android:text="@={shoe.company}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_shoe_company"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            android:autofillHints="" />
 
         <!--Shoe size-->
         <TextView
@@ -72,10 +87,12 @@
             android:ems="5"
             android:inputType="number"
             android:minHeight="48dp"
+            android:text="@={shoe.size}"
             app:layout_constraintBottom_toTopOf="@+id/et_shoe_description"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_company"
             app:layout_constraintStart_toStartOf="@+id/et_shoe_company"
-            app:layout_constraintTop_toBottomOf="@+id/et_shoe_company" />
+            app:layout_constraintTop_toBottomOf="@+id/et_shoe_company"
+            android:autofillHints="" />
 
         <!--Description-->
         <TextView
@@ -94,9 +111,12 @@
             android:layout_marginTop="16dp"
             android:ems="5"
             android:minHeight="48dp"
+            android:text="@={shoe.description}"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_company"
             app:layout_constraintStart_toStartOf="@+id/et_shoe_company"
-            app:layout_constraintTop_toBottomOf="@+id/et_shoe_size" />
+            app:layout_constraintTop_toBottomOf="@+id/et_shoe_size"
+            android:inputType="text"
+            android:autofillHints="" />
 
         <!--Cancel button-->
         <Button
@@ -104,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cancel"
+            style="@style/CancelButtonStyle"
             app:layout_constraintBottom_toBottomOf="@+id/bt_save"
             app:layout_constraintEnd_toStartOf="@+id/bt_save"
             app:layout_constraintStart_toStartOf="parent"
@@ -112,13 +133,16 @@
         <!--Save button-->
         <Button
             android:id="@+id/bt_save"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{() -> ShoeListViewModel.addShoe(shoe)}"
             android:text="@string/save"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_description"
             app:layout_constraintStart_toStartOf="@+id/et_shoe_description"
-            app:layout_constraintTop_toBottomOf="@+id/et_shoe_description" />
+            app:layout_constraintTop_toBottomOf="@+id/et_shoe_description"
+            app:layout_constraintVertical_bias="0.25" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_margin="@dimen/layout_margin"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tv_shop_name"
+            android:id="@+id/tv_welcome"
             style="@style/TitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/layout_margin"
             android:padding="@dimen/small_padding"
             android:text="@string/welcome"
-            android:textSize="96sp"
-            app:layout_constraintBottom_toTopOf="@+id/bt_nav_to_instructions"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
 
         <TextView
             android:id="@+id/tv_slogan"
@@ -26,18 +28,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/slogan"
+            app:layout_constraintBottom_toTopOf="@+id/bt_nav_to_instructions"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_shop_name" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
 
         <Button
             android:id="@+id/bt_nav_to_instructions"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
             android:text="@string/walk_to_the_app"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_slogan" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

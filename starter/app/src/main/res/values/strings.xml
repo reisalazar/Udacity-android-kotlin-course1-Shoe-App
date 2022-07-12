@@ -7,7 +7,7 @@
     <string name="login">Login</string>
     <string name="enter_your_password">Enter your Password</string>
     <string name="enter_your_email">Enter your Email</string>
-    <string name="slogan">These Shoes Are Made for Walkin\'</string>
+    <string name="slogan">These shoes are made for walkin\'</string>
     <string name="welcome">Welcome</string>
     <string name="walk_to_the_app">Walk to the app</string>
     <string name="shoe_store">Shoe Store</string>
@@ -18,4 +18,12 @@
     <string name="shoe_name">Shoe Name:</string>
     <string name="cancel">Cancel</string>
     <string name="save">save</string>
+    <string name="incomplete_text">incomplete text</string>
+    <string name="description_button">add a new shoe</string>
+    <string name="instructions">To save a new shoe in your list, you must go to the next screen and
+        input a shoe name, the size of the shoe, the shoe\'s manufacturer and a description. \n\nNext
+        you will need to save the shoe, just hit the button SAVE.\n\nYou can also cancel your shoe by
+        hitting the button Cancel</string>
+    <string name="information">This is a app to help you make a list of shoes</string>
+    <string name="to_the_shoe_list">To the Shoe List</string>
 </resources>

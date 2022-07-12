@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/font/arizonia.xml" value="0.1" />
+        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/font/berkshire_swash.xml" value="0.2234375" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/activity_main.xml" value="0.15526849037487336" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_blank.xml" value="0.15489130434782608" />
-        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_instructions.xml" value="0.15489130434782608" />
+        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_instructions.xml" value="0.17831813576494426" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_login_screen.xml" value="0.25" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_shoe_detail.xml" value="0.33" />
-        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_shoe_list.xml" value="0.1641337386018237" />
+        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_shoe_list.xml" value="0.25" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/fragment_welcome.xml" value="0.33" />
+        <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/layout/shoe_item.xml" value="0.36666666666666664" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/menu/log_out_menu.xml" value="0.25" />
         <entry key="..\:/DEV/AndroidStudioProjects/Udacity projeto 1/starter/app/src/main/res/menu/logout_menu.xml" value="0.1" />
       </map>
