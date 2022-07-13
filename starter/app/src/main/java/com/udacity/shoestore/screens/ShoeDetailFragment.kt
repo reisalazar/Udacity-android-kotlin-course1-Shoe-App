@@ -26,14 +26,17 @@ class ShoeDetailFragment : Fragment() {
 
         shoeListViewModel = ViewModelProvider(requireActivity()).get(ShoeViewModel::class.java)
         binding.shoeListViewModel = shoeListViewModel
-        binding.lifecycleOwner = this
 
-        binding.shoe = Shoe("", "", "", "")
+        with(binding) {
+            lifecycleOwner = ShoeDetailFragment()
+            shoe = Shoe("", "", "", "")
 
-        binding.btCancel.setOnClickListener {
-            it.findNavController()
-                .navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
+            btCancel.setOnClickListener {
+                it.findNavController()
+                    .navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
+            }
         }
+
         val saveButtonObserver = Observer<Boolean> {
             if (shoeListViewModel.navigateToListingScreen.value == true)
                 findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())

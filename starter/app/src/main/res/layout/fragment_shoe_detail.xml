@@ -12,10 +12,12 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--Constraint Layout will be used to maintain screen configuration in different devices
+     also, easier to add, replace, or change a view, in my opinion-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/layout_margin"
+        android:layout_margin="@dimen/big_margin"
         tools:context=".screens.ShoeDetailFragment">
 
         <!--Shoe name-->
@@ -32,10 +34,10 @@
             android:id="@+id/et_shoe_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginBottom="@dimen/big_margin"
             android:ems="5"
             android:inputType="text"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/min_height"
             android:text="@={shoe.name}"
             app:layout_constraintBottom_toTopOf="@+id/et_shoe_company"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_company"
@@ -59,7 +61,7 @@
             android:layout_height="wrap_content"
             android:ems="5"
             android:inputType="text"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/min_height"
             android:paddingBottom="@dimen/big_padding"
             android:text="@={shoe.company}"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -86,7 +88,7 @@
             android:layout_marginTop="16dp"
             android:ems="5"
             android:inputType="number"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/min_height"
             android:text="@={shoe.size}"
             app:layout_constraintBottom_toTopOf="@+id/et_shoe_description"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_company"
@@ -110,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:ems="5"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/min_height"
             android:text="@={shoe.description}"
             app:layout_constraintEnd_toEndOf="@+id/et_shoe_company"
             app:layout_constraintStart_toStartOf="@+id/et_shoe_company"

@@ -2,17 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--Constraint Layout will be used to maintain screen configuration in different devices
+     also, easier to add, replace, or change a view, in my opinion-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_margin="@dimen/layout_margin"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/big_margin">
 
         <TextView
             android:id="@+id/tv_welcome"
             style="@style/TitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
+            android:layout_margin="@dimen/big_margin"
             android:padding="@dimen/small_padding"
             android:text="@string/welcome"
             android:textSize="72sp"

@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--Constraint Layout will be used to maintain screen configuration in different devices
+     also, easier to add, replace, or change a view, in my opinion-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/layout_margin"
+        android:layout_margin="@dimen/big_margin"
         tools:context=".screens.LoginFragment">
 
         <TextView
@@ -28,7 +30,7 @@
             android:hint="@string/enter_your_email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/min_height"
             android:textColorHint="#546E7A"
             app:layout_constraintBottom_toTopOf="@+id/et_password"
             app:layout_constraintEnd_toEndOf="@+id/et_password"
@@ -41,6 +43,7 @@
             android:id="@+id/lb_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/big_margin"
             android:text="@string/email"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/et_email"
@@ -55,7 +58,7 @@
             android:hint="@string/enter_your_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/min_height"
             android:textColorHint="#546E7A"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -67,6 +70,7 @@
             android:id="@+id/lb_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/big_margin"
             android:text="@string/password"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/et_password"
